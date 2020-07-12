@@ -1,0 +1,7 @@
+<p align="<{$block.si_align}>"><marquee behavior="scroll" direction="down" height="<{$block.si_height}>" width="<{$block.si_width}>" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()"><p>
+
+	<{foreachq item=sitems from=$block.items}>
+		<a href="<{$sitems.url}>"><center><img border="0" src="<{$sitems.imgurl}>" width="<{$block.si_width}>" alt="<{$sitems.name}>" title="<{$sitems.name}>"/><{if !$block.si_title}><br/><{$sitems.name}><{/if}></center></a><br/><br/>
+	<{/foreach}>
+	
+</p></marquee></p>
